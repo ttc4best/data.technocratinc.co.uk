@@ -9792,20 +9792,20 @@ a.navbar-brand span.fa {
   font-weight: 700;
   font-size: 65px;
   line-height: 80px;
-  color: #ffffff; }
+  color: #fff; }
 
 .w3l-main-banner .banner-info p {
   font-size: 20px;
   font-weight: 400;
-  color: #ffffff;
+  color: #fff;
   display: inline-block;
   line-height: 32px;
   max-width: 750px; }
 
 .w3l-main-banner .banner-view {
-  background: url(../images/mainimage.jpg) no-repeat right;
+  background: url(../images/mainimage1.jpg) no-repeat right;
   background-size: cover;
-  min-height: 700px;
+  min-height: 850px;
   z-index: 0;
   display: grid;
   align-items: center;
@@ -10983,7 +10983,7 @@ span.sicon {
   background-position: bottom right, left, right; }
 
 .w3l-services-block-3 .service1:hover {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.67)), url(../images/g1.jpg); }
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.67)), url(../images/g12.jpg); }
 
 .w3l-services-block-3 .service2:hover {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.67)), url(../images/g2.jpg); }
