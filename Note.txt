@@ -1,0 +1,5 @@
+I am a Full Stack Data Alchemist  with 6 years of programming expertise and 4 years of professional experience as a data analyst
+I am passionate about reswizlling data to solve complex business challenges
+My proven track record includes delivering valuable insights, driving business decisions through data analysis, predictive modeling, and machine learning. Recently, I earned the AWS Certified Cloud Practitioner (CCP) certification, demonstrating my foundational knowledge of AWS cloud principles and services, and further enhancing my ability to deploy data solutions in the cloud.
+
+I am experienced in working with large datasets and using statistical analysis to draw actionable insights. I am also skilled in data visualization, ensuring that my reports and visualizations are clear and informative.
