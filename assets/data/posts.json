@@ -1,0 +1,31 @@
+[
+  {
+    "id": "ai-workflow",
+    "title": "How I Built an AI Workflow with AWS",
+    "date": "2025-06-20",
+    "tags": ["AI", "AWS", "Workflow"],
+    "summary": "A breakdown of how I automated a client’s business process using AI...",
+    "content": "<p>This is the full content of the post...</p>",
+    "coverImage": "assets/images/ai-blog.png"
+  },
+  {
+    "id": "data-pipelines",
+    "title": "Building Data Pipelines with AWS Glue and Athena",
+    "date": "2025-05-15",
+    "tags": ["Data Engineering", "AWS", "Analytics"],
+    "summary": "How I created scalable data pipelines for real-time sales insights.",
+    "content": "<p>Full content for the data pipeline post...</p>",
+    "coverImage": "assets/images/data-pipeline.png"
+  },
+  {
+    "id": "generative-ai",
+    "title": "Introduction to Generative AI",
+    "date": "2025-04-10",
+    "tags": ["AI", "Generative AI"],
+    "summary": "An intro to generative AI and its use cases.",
+    "content": "<p>Full content on generative AI...</p>",
+    "coverImage": "assets/images/generative-ai.png"
+  }
+  // Add more posts here
+]
+

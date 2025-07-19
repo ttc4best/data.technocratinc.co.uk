@@ -1,41 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Blog Title</title>
-    <link rel="stylesheet" href="assets/css/blog.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog</title>
+
+  <!-- BOOTSTRAP CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="assets/css/blog.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- JS for Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-<body>
-    <header>
-        <h1>Your Blog Title</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+
+<header>
+    <div class="w3l-header" id="home">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark pl-0 pr-0">
+          <a class="navbar-brand m-0" href="index.html">
+            <span class="fa fa-database"></span> Full-Stack Data Alchemist
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon fa fa-bars"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item mr-lg-4"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item mr-lg-4"><a class="nav-link" href="about.html">About Me</a></li>
+              <li class="nav-item mr-lg-4"><a class="nav-link" href="services.html">Services</a></li>
+              <li class="nav-item mr-lg-4"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+              <li class="nav-item mr-lg-4"><a class="nav-link" href="certificate.html">Certificate</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
             </ul>
+          </div>
         </nav>
-    </header>
+      </div>
+    </div>
+  </header>
 
-    <main>
-        <section class="blog-post">
-            <h2>Blog Post Title</h2>
-            <img src="image.jpg" alt="Image for Blog Post">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <a href="#">Read More</a>
-        </section>
+<body>
 
-        <section class="blog-post">
-            <h2>Another Blog Post Title</h2>
-            <img src="image2.jpg" alt="Image for Blog Post">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <a href="#">Read More</a>
-        </section>
-    </main>
+  <section class="blog-section">
+    <h1>Project Full Story</h1>
 
-    <footer>
-        Copyright © 2023 Your Website Name
-    </footer>
+    <div class="blog-grid">
+
+      <!-- Blog Post 1 -->
+      <article class="blog-card">
+        <h2 class="blog-title">Understanding Generative AI in Simple Terms</h2>
+        <p class="blog-date">Published: July 2025</p>
+        
+        <p class="blog-summary">
+          A practical guide to what generative AI really is, how it’s being used, and what it means for businesses and creators alike.
+        </p>
+
+        <p class="blog-full-content" style="display:none;">
+          Generative AI is one of the most powerful and widely discussed fields in artificial intelligence today. Unlike traditional AI systems that classify or predict based on existing data, generative AI creates something entirely new — be it text, images, code, or even music.
+          At its core, generative AI uses models like GPT, GANs, and VAEs to produce new content. These models are trained on massive datasets and then fine-tuned to generate realistic, context-aware outputs.
+          Real-world applications include content creation, design & media, software engineering, and customer service. 
+          As part of my AI portfolio, I developed a text-based intelligent assistant powered by OpenAI’s API. The agent helps content creators generate outlines and full drafts for articles, reducing drafting time by 60%.
+        </p>
+
+        <a href="#" class="read-more">Read More</a>
+      </article>
+
+      <!-- Blog Post 2 -->
+      <article class="blog-card">
+        <h2 class="blog-title">Automation Workflows with AWS Step Functions</h2>
+        <p class="blog-date">Published: June 2025</p>
+        
+        <p class="blog-summary">
+          How to automate repetitive tasks and create powerful workflows using AWS services — with real-world use cases.
+        </p>
+
+        <p class="blog-full-content" style="display:none;">
+          AWS Step Functions enable you to build complex automation workflows by coordinating multiple AWS services. This service is perfect for handling retries, parallel processing, and long-running tasks.
+          In a recent project, I designed an automated data ingestion pipeline that collects, validates, and transforms data before loading it into a data warehouse.
+          This pipeline reduced manual overhead and improved data quality. I leveraged Step Functions with Lambda and S3 to achieve scalable, serverless orchestration.
+        </p>
+
+        <a href="#" class="read-more">Read More</a>
+      </article>
+
+      <!-- Blog Post 3 -->
+      <article class="blog-card">
+        <h2 class="blog-title">AI-Driven Customer Support Bot</h2>
+        <p class="blog-date">Published: May 2025</p>
+        
+        <p class="blog-summary">
+          Serverless chatbot that resolves 85% of queries automatically, reducing support workload dramatically.
+        </p>
+
+        <p class="blog-full-content" style="display:none;">
+          This project involved developing an AI-powered customer support chatbot using AWS services like Amazon Lex, Lambda, and DynamoDB.
+          The bot understands natural language queries and can resolve most common issues without human intervention.
+          After deployment, the bot handled over 85% of support tickets autonomously, leading to a 12% increase in customer satisfaction and saving 40 staff-hours per month.
+          The system was designed to be scalable and easy to update with new intents and FAQs.
+        </p>
+
+        <a href="#" class="read-more">Read More</a>
+      </article>
+
+      <!-- Blog Post 3 -->
+      <article class="blog-card">
+        <h2 class="blog-title">Predictive Maintenance for Industrial Equipment</h2>
+        <p class="blog-date">Published: May 2025</p>
+        
+        <p class="blog-summary">
+          Developed a predictive maintenance model using machine learning to forecast equipment failures, reducing downtime by 30% and saving $100,000 in maintenance costs.
+        </p>
+
+        <p class="blog-full-content" style="display:none;">
+           Collected and analyzed sensor data from industrial equipment to develop a predictive maintenance model. Used machine learning algorithms to identify patterns and anomalies in the data, and forecasted equipment failures. Deployed the model in a production environment, enabling proactive maintenance and reducing downtime.
+This project showcases skills in:
+Data collection and preprocessing
+Feature engineering
+Machine learning model development and deployment
+Data visualization and interpretation
+You can customize this project to fit your specific experience and skills, and use it as a sample project to demonstrate your capabilities to potential clients or employers.
+Given your interest in data science and AI, you might find opportunities in predictive maintenance, demand forecasting, or anomaly detection. Let me know if you'd like to explore any of these areas further!
+<!-- Here are a few more sample projects:
+Customer Segmentation: Developed a customer segmentation model using clustering algorithms to identify high-value customers and improve marketing efforts.
+Demand Forecasting: Built a demand forecasting model using time series analysis to predict sales and optimize inventory management.
+Anomaly Detection: Developed an anomaly detection model using machine learning to identify unusual patterns in transactional data and prevent fraud.-->
+        </p>
+
+        <a href="#" class="read-more">Read More</a>
+      </article>
+
+    </div>
+  </section>
+
+  <script>
+    document.querySelectorAll('.read-more').forEach(button => {
+      button.addEventListener('click', function(e) {
+        e.preventDefault();
+        const article = this.closest('article');
+        const fullContent = article.querySelector('.blog-full-content');
+        const summary = article.querySelector('.blog-summary');
+
+        if (fullContent.style.display === 'none') {
+          fullContent.style.display = 'block';
+          summary.style.display = 'none';
+          this.textContent = 'Show Less';
+        } else {
+          fullContent.style.display = 'none';
+          summary.style.display = 'block';
+          this.textContent = 'Read More';
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
+
+
+
+ <!-- Footer -->
+  <footer>
+    <section class="w3l-footers-1">
+      <div class="footer py-3">
+        <div class="container">
+          <div class="footer-content">
+            <div class="row">
+              <div class="col-lg-8 footer-left">
+                <p class="m-0">
+                  &copy; 2023 Full Stack Data Scientist. All Rights Reserved |
+                  Powered by <a href="https://technocrat-inc.com">TECHNOCRAT</a>
+                </p>
+              </div>
+              <div class="col-lg-4 footer-right text-lg-right text-center mt-lg-0 mt-3">
+                <ul class="social m-0 p-0">
+                  <li><a href="#facebook"><span class="fa fa-facebook"></span></a></li>
+                  <li><a href="#linkedin"><span class="fa fa-linkedin"></span></a></li>
+                  <li><a href="#instagram"><span class="fa fa-instagram"></span></a></li>
+                  <li><a href="#twitter"><span class="fa fa-twitter"></span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+
 </body>
 </html>

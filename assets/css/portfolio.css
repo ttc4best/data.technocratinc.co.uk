@@ -1,0 +1,189 @@
+:root {
+  --brand-main: #DD3BF0;
+  --brand-hover: #A35AED;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;
+  background: #f8f9fa;
+  color: #000;
+}
+
+.portfolio-section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.portfolio-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-align: center;
+  color: var(--brand-main);
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.portfolio-card {
+  background: #fff;
+  border-left: 5px solid var(--brand-main);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 24px;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--brand-hover);
+  box-shadow: 0 4px 14px rgba(163, 90, 237, 0.2);
+}
+
+.portfolio-card h3 {
+  margin-top: 0;
+  font-size: 1.4rem;
+}
+
+.portfolio-card p {
+  line-height: 1.5;
+}
+
+.portfolio-tags {
+  margin: 10px 0;
+}
+
+.portfolio-tags span {
+  background: var(--brand-main);
+  color: #fff;
+  padding: 5px 10px;
+  margin-right: 8px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  transition: background 0.3s ease;
+}
+
+.portfolio-card:hover .portfolio-tags span {
+  background: var(--brand-hover);
+}
+
+.portfolio-links a {
+  display: inline-block;
+  margin-right: 15px;
+  margin-top: 10px;
+  text-decoration: none;
+  color: var(--brand-main);
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.portfolio-links a:hover,
+.portfolio-links a:focus {
+  color: var(--brand-hover);
+  text-decoration: underline;
+}
+
+.w3l-footers-1 .footer {
+  background: #000;
+  color: #fff;
+  font-size: 15px;
+}
+
+.w3l-footers-1 .footer a {
+  color: #DD3BF0;
+  text-decoration: none;
+}
+
+.w3l-footers-1 .footer a:hover {
+  color: #A35AED;
+}
+
+.footer .social {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.footer .social li a {
+  color: #fff;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.footer .social li a:hover {
+  color: #A35AED;
+}
+
+
+.social {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.social li a {
+  color: #fff;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.social li a:hover {
+  color: #DD3BF0;
+}
+/* Add to test.css if missing */
+.w3l-header {
+  background: #000; /* Or your preferred colour */
+  padding: 1rem 0;
+}
+
+.navbar .nav-link {
+  color: #fff !important;
+}
+
+.navbar-brand {
+  color: #DD3BF0 !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: #dd3bf0 !important;  /* Default purple */
+  transition: color 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+  color: #a35aed !important;  /* Lighter purple on hover */
+}
+
+.navbar-dark .navbar-brand {
+  color: #dd3bf0 !important;  /* Default brand colour */
+  transition: color 0.3s ease;
+}
+
+.navbar-dark .navbar-brand:hover,
+.navbar-dark .navbar-brand:focus {
+  color: #a35aed !important;  /* Hover colour */
+}
+
+@media (max-width: 600px) {
+  .portfolio-section h2 {
+    font-size: 2rem;
+  }
+}
+/* ===== Responsive adjustments ===== */
+
+@media (max-width: 992px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+}
